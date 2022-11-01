@@ -12,11 +12,38 @@ main {
   justify-content: space-between;
 }
 
+
+/* Links throughout the page */
+
+a {
+  text-decoration: none;
+}
+
+.blue-link {
+  color: #3367a1;
+}
+
+.gray-link {
+  color: gray;
+}
+
+
+/* Things in posts */
+
+.post {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 90px;
+}
+
+.post:focus {
+  background-color: #f0f3fc;
+}
+
 .post-number {
   float: left;
   height: 90px;
   width: 40px;
-  text-align: center;
   display: inline-flex;
   align-items: center;
   color: gray;
@@ -39,7 +66,6 @@ main {
 .nvotes {
   display: block;
   text-align: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   font-weight: bold;
@@ -56,28 +82,6 @@ h1 {
   display: inline;
   font-weight: normal;
   font-size: x-large;
-}
-
-a {
-  text-decoration: none;
-}
-
-.blue-link {
-  color: #3367a1;
-}
-
-.gray-link {
-  color: gray;
-}
-
-.post {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 90px;
-}
-
-.post:focus {
-  background-color: #f0f3fc;
 }
 
 p {
@@ -101,7 +105,8 @@ p {
   font-weight: bold;
 }
 
-/* navbar */
+
+/* Header and sidebar */
 
 header {
   background-color: #cee3f8;
@@ -120,12 +125,15 @@ nav div.grow {
   flex-grow: 1;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 .upper-menu {
   background-color:#f0f0f0;
-  white-space:nowrap;
-  text-transform:uppercase;
   border-bottom:1px solid gray;
-  font-size:90%;
+  font-size:small;
   height:20px;
 }
 
@@ -164,6 +172,15 @@ nav div.grow {
   border-bottom:1px solid white;
 }
 
+.login {
+  width: 100%;
+  text-align: right;
+  font-weight: normal;
+  background-color: #eff7ff;
+  padding: 2px 6px 0 6px;
+  margin-left: 835px;
+}
+
 section {
   width: 100%;
 }
@@ -171,11 +188,6 @@ section {
 aside {
   margin-left: 5px;
   text-align: center;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
 }
 
 input {
