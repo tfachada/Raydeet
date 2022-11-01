@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>raydeet: the funpage of the web</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/logo-small.png">
     <link rel="preconnect" href="https://api.fonts.coollabs.io" crossorigin>
     <link href="https://api.fonts.coollabs.io/css2?family=Lato&display=swap" rel="stylesheet">
   </head>
@@ -66,16 +66,22 @@
           <li><a href="broken_site.html"><img class="aside-pic" src="images/premium.png" alt="Get premium" /></a></li>
           <li><a href="broken_site.html"><img src="images/createsub.png" class="submit"/></a></button></li>
           <li><img class="aside-pic" src="images/create-for.png" /></li>
-          <li><small><a href="broken_site.html" class="blue-link">account activity</a></small></li>
         </ul>
       </aside>
       <section id="post-list">
 
         <!--TEMPLATE FOR POSTS-->
-        <!--variables: [title, post-source, age, OP, sub, ncomments, plural]-->
+        <!--variables: [post-number, nvotes, thumbnail, title, post-source, age, OP, sub, ncomments, plural]-->
         <!--page will be filled with instances of this via javascript-->
         <template id="article-template">
           <article class="post" tabindex="1">
+            <span class="post-number">0</span>
+            <div class="arrows-votes">
+              <img src="images/upvote.png" alt="thumbnail" class="upvote">
+              <span class="nvotes">69</span>
+              <img src="images/downvote.png" alt="thumbnail" class="downvote">
+            </div>
+            <img src="images/logo-small.png" alt="thumbnail" class="thumbnail">
             <a href="broken_site.html" class="post-title">
               <h1 class="title">Post title</h1>
             </a>

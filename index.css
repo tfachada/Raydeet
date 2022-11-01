@@ -12,6 +12,46 @@ main {
   justify-content: space-between;
 }
 
+.post-number {
+  float: left;
+  height: 90px;
+  width: 40px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  color: gray;
+}
+
+.arrows-votes {
+  float: left;
+  height: 90px;
+  width: 30px;
+  justify-content: center;
+}
+
+.upvote, .downvote {
+  align-self: center;
+  align-content: center;
+  height: 30px;
+  width: 30px;
+}
+
+.nvotes {
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  color: gray;
+}
+
+.thumbnail {
+  float: left;
+  height: 90px;
+  width: 90px;
+}
+
 h1 {
   display: inline;
   font-weight: normal;
@@ -33,6 +73,7 @@ a {
 .post {
   margin-top: 20px;
   margin-bottom: 20px;
+  height: 90px;
 }
 
 .post:focus {

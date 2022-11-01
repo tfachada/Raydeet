@@ -1,5 +1,6 @@
 const post = document.getElementById("article-template").content
 
+vote_numbers = ["1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5"]
 titles = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y"]
 sources = ["1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5"]
 ages = ["1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5"]
@@ -7,9 +8,11 @@ ops = ["1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5"
 subs = ["1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5"]
 comment_numbers = ["1", "2", "3", "4", "5", "0", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5", "1", "2", "3", "4", "5"]
 
-for (var i = 0; i < 25; i++) {
+for (var i = 1; i <= 25; i++) {
   var copy = document.importNode(post, true);
 
+  copy.querySelector(".post-number").textContent = i;
+  copy.querySelector(".nvotes").textContent = vote_numbers[i];
   copy.querySelector(".title").textContent = titles[i];
   copy.querySelector(".post-source").textContent = "("+sources[i]+")";
   copy.querySelector(".age").textContent = ages[i];
