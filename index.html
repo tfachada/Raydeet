@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>raydeet: the funpage of the web</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://api.fonts.coollabs.io" crossorigin>
+    <link href="https://api.fonts.coollabs.io/css2?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="upper-menu">
+        <a class="upper-menu-link" href="broken_site.html">MY SUBRAYDEETS</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">DASHBOARD</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">HOME</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">POPULAR</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">ALL</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">RANDOM</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">USERS</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">FRIENDS</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">MOD</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">MODQUEUE</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">SAVED</a>
+         - 
+        <a class="upper-menu-link" href="broken_site.html">EDIT</a>
+      </div>
+      <nav>
+        <div>
+          <a href="index.html" id="logo"><img src="images/logo.png" alt="This site is bad for you" width="166" height="61"></a>
+        </div>
+        <div>
+        <ul class="nav-link-box">
+          <li>
+            <a href="#" class="selected">best</a>
+            <a href="broken_site.html">hot</a>
+            <a href="broken_site.html">new</a>
+            <a href="broken_site.html">rising</a>
+            <a href="broken_site.html">controversial</a>
+            <a href="broken_site.html">top</a>
+            <a href="broken_site.html">guilded</a>
+            <a href="broken_site.html">wiki</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <ul>
+          <li><input type="search" action="#" role="search" placeholder="search"></li>
+          <li><a href="broken_site.html"><img src="images/newlink.png" class="submit"/></a></button></li>
+          <li><a href="broken_site.html"><img src="images/newpost.png" class="submit"/></a></button></li>
+          <li><a href="broken_site.html"><img class="aside-pic" src="images/premium.png" alt="Get premium" /></a></li>
+          <li><a href="broken_site.html"><img src="images/createsub.png" class="submit"/></a></button></li>
+          <li><img class="aside-pic" src="images/create-for.png" /></li>
+          <li><small><a href="broken_site.html" class="blue-link">account activity</a></small></li>
+        </ul>
+      </aside>
+      <section id="post-list">
+
+        <!--TEMPLATE FOR POSTS-->
+        <!--variables: [title, post-source, age, OP, sub, ncomments, plural]-->
+        <!--page will be filled with instances of this via javascript-->
+        <template id="article-template">
+          <article class="post" tabindex="1">
+            <a href="broken_site.html" class="post-title">
+              <h1 class="title">Post title</h1>
+            </a>
+            &nbsp;
+            <span class="post-source">(somewhere)</span>
+            <p class="submission-details">
+              submitted
+              <span class="age">100 years</span>
+              ago by
+              <a href="broken_site.html" class="blue-link"><span class="OP">someone</span></a>
+              to
+              <a href="broken_site.html" class="blue-link">r/<span class="sub">webdev</span></a>
+            </p>
+            <p class="post-options">
+              <a href="broken_site.html" class="gray-link"><span class="ncomments">1000000</span> comment<span class="plural">s</span></a> &nbsp;
+              <a href="broken_site.html" class="gray-link">share</a> &nbsp;
+              <a href="broken_site.html" class="gray-link">save</a> &nbsp;
+              <a href="broken_site.html"><font color=#a79128>give award</font></a> &nbsp;
+              <a href="broken_site.html" class="gray-link">report</a> &nbsp;
+              <a href="broken_site.html" class="gray-link">crosspost</a>
+            </p>
+          </article>
+        </template>
+
+        <!--Script used to make said filling-->
+        <script src="loadposts.js"></script>
+
+      </section>
+    </main>
+    <footer>
+      <div>
+        view more: <button><a href="broken_site.html" class="blue-link">next></a> </button>
+      </div>
+    </footer>
+  </body>
+</html> 

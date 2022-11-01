@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  background-color: white;
+  font-family: "Verdana", "Lato";
+}
+
+main {
+  margin: 1%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+h1 {
+  display: inline;
+  font-weight: normal;
+  font-size: x-large;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blue-link {
+  color: #3367a1;
+}
+
+.gray-link {
+  color: gray;
+}
+
+.post {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post:focus {
+  background-color: #f0f3fc;
+}
+
+p {
+  max-width: 50rem;
+  margin-right: 500px;
+}
+
+.post-source {
+  font-size: small;
+  color: gray;
+}
+
+.submission-details {
+  font-size: small;
+  color: gray;
+}
+
+.post-options {
+  font-size: small;
+  font: gray;
+  font-weight: bold;
+}
+
+/* navbar */
+
+header {
+  background-color: #cee3f8;
+  border-bottom:1px solid #5f99cf;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  font-weight: bold;
+  align-items: baseline;
+}
+
+nav div.grow {
+  flex-grow: 1;
+}
+
+.upper-menu {
+  background-color:#f0f0f0;
+  white-space:nowrap;
+  text-transform:uppercase;
+  border-bottom:1px solid gray;
+  font-size:90%;
+  height:20px;
+}
+
+.upper-menu-link {
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 90%;
+}
+
+.nav-link-box {
+  list-style-type: none;
+  white-space: nowrap;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  vertical-align: bottom;
+}
+
+.nav-link-box li {
+  display:inline;
+  font-weight:bold;
+  margin:0px 3px
+}
+
+.nav-link-box li a {
+  color: #3367a1;
+  background-color: #eff7ff;
+  padding:2px 6px 0 6px;
+}
+
+.nav-link-box li a.selected {
+  color: orangered;
+  background-color: white;
+  border:1px solid #5f99cf;
+  border-bottom:1px solid white;
+}
+
+section {
+  width: 100%;
+}
+
+aside {
+  margin-left: 5px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input {
+  border:1px solid gray;
+  font-size:16px;
+  width:100%;
+  height: 40px;
+  box-sizing:border-box;
+  padding:6px;
+  padding-right:25px;
+  padding-left:9px;
+  vertical-align:middle
+}
+
+.submit {
+  margin-top: 15px;
+}
+
+.aside-pic {
+  margin-top: 15px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.5rem 10%;
+  margin-top: 5rem;
+}
+
+footer img {
+  width: 25rem;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li {
+  list-style: none;
+} 
